@@ -1,0 +1,61 @@
+/* -------------------------------------------BARRA DE NAVEGACION-------------------------------------------------- */
+@media (min-width:400px){
+    .nav__barra{
+        background-color: red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $blanco;
+        position: fixed;
+        ul{
+            z-index:9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    }
+@media(min-width:768px){
+    .nav__barra {
+        width: 100%;
+        ul{
+            z-index: 9999;
+            width: 100%;
+            position:fixed;
+            display: flex;
+            background-color: red;
+            font-family:$texto;
+            flex-flow: row;
+            align-items: baseline;
+            justify-content: space-evenly;
+            height: 4rem;
+            padding: 0;
+        }
+        h1{
+            font-size:1.5rem ;
+            img{
+                transform: scale(0.8);
+            }
+        }
+        li{
+            list-style: none;
+            border-radius: 0.2rem;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        li:hover{
+            box-shadow: 0 0 20px $negro;
+            transition: all 0s;
+        }
+    }
+}

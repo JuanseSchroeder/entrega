@@ -1,0 +1,52 @@
+/* -----------------------------------------------------------------TIENDA ----------------------------------------------------*/
+.tienda{
+    padding-top: 3rem;
+    font-family:$texto; 
+    text-align: center;
+    font-size: 4rem;
+    background-color: $medio;
+    min-width: 1280px;
+    a{
+        text-decoration: none;
+        color: $blanco;
+    }
+    div{
+        background-image: linear-gradient($medio,red, $medio);
+        height: 20rem;
+        display: flex;
+        min-width: 697px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: $blanco;
+    }
+    ul{
+        margin-right: 1.5rem;
+        li{ 
+            background-color: $medio ;
+            color: $blanco;
+            font-size: 2rem;
+            text-align: center;
+            list-style: none;
+            div{
+                background-color: $blanco;
+                background-image: none;
+                border-radius: 1rem;
+                img{
+                    margin:20px;
+                }
+            }
+            ul{
+                
+                li{
+                    font-size: 1rem;
+                    color: $negro;
+                    background-color: $blanco;
+                    list-style: circle;
+                    text-align: left;
+                    
+                }
+            }
+        }
+    }
+}

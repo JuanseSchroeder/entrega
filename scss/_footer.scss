@@ -1,0 +1,96 @@
+/* --------------------------------------------------------------------FOOTER---------------------------------------------------- */
+.footer__barra{
+    display: flex;
+    background-color: $negro;
+    color: $blanco;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: column;
+    font-family:$texto; 
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: $blanco;
+    }
+}
+.footer__barra__tienda{
+    order: 1;
+}
+.footer__barra__carrito{
+    order: 2;
+}
+.footer__barra__ofertas{
+    order:3;
+}
+.footer__barra__contacto{
+    order: 8;
+}
+.footer__barra__insta{
+    order: 6;
+}
+.footer__barra__face{
+    order: 7;
+}
+.footer__barra__twitter{
+    order: 5;
+}
+.footer__barra__novedades{
+    order: 4;
+}
+
+
+@media(min-width:768px){
+    .footer__barra{
+        display: flex;
+        background-color: $negro;
+        height: 4rem;
+        color: $blanco;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        flex-direction: column;
+        font-family:$texto; 
+        padding: 0.5rem;
+        line-height: 1.5rem;
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: $blanco;
+        }
+    }
+    .footer__barra__tienda{
+        order: 1;
+    }
+    .footer__barra__carrito{
+        order: 2;
+    }
+    .footer__barra__ofertas{
+        order:3;
+    }
+    .footer__barra__contacto{
+        order: 8;
+    }
+    .footer__barra__insta{
+        order: 6;
+    }
+    .footer__barra__face{
+        order: 7;
+    }
+    .footer__barra__twitter{
+        order: 5;
+    }
+    .footer__barra__novedades{
+        order: 4;
+    }
+}

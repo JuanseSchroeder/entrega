@@ -1,0 +1,37 @@
+/*--------------------------------------------------------- CARRITO --------------------------------------------------------------*/
+.carrito{
+    padding: 4rem;
+    display: flex;
+    font-family:$texto; 
+    color: white;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: $oscuro;
+    min-width: 1280px;
+    ul{
+        background-color: $claro;
+        padding-right: 32px;
+        padding-bottom: 32px;
+        border-radius: 2rem;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding-top: 2rem;
+        font-size: 1rem;
+    }
+    input{
+        margin: 1rem;
+        width: 10rem;
+        font-size: .8rem;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
