@@ -1,15 +1,21 @@
 /* -------------------------------------------BARRA DE NAVEGACION-------------------------------------------------- */
+header{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
 @media (min-width:400px){
     .nav__barra{
-        background-color: red;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $blanco;
-        position: fixed;
+        div{
+            background-color: red;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $blanco;
+        }
         ul{
-            z-index:9999;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,18 +31,23 @@
     }
 @media(min-width:768px){
     .nav__barra {
-        width: 100%;
+        
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            height: 3.5rem;
+            font-family: $texto;
+        }
         ul{
-            z-index: 9999;
+            
             width: 100%;
-            position:fixed;
             display: flex;
             background-color: red;
             font-family:$texto;
             flex-flow: row;
-            align-items: baseline;
+            align-items: center;
             justify-content: space-evenly;
-            height: 4rem;
             padding: 0;
         }
         h1{

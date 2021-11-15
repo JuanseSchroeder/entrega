@@ -11,8 +11,14 @@ body {
 }
 
 /* -------------------------------------------BARRA DE NAVEGACION-------------------------------------------------- */
+header {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+}
+
 @media (min-width: 400px) {
-  .nav__barra {
+  .nav__barra div {
     background-color: red;
     width: 100%;
     display: -webkit-box;
@@ -26,10 +32,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    position: fixed;
   }
   .nav__barra ul {
-    z-index: 9999;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -50,13 +54,19 @@ body {
 }
 
 @media (min-width: 768px) {
-  .nav__barra {
-    width: 100%;
+  .nav__barra div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 3.5rem;
+    font-family: "Orbitron", sans-serif;
   }
   .nav__barra ul {
-    z-index: 9999;
     width: 100%;
-    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,13 +76,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 4rem;
     padding: 0;
   }
   .nav__barra h1 {
@@ -116,7 +125,6 @@ body {
     margin: 20px;
   }
   .main__novedad img {
-    z-index: 0;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
@@ -877,55 +885,5 @@ legend {
         -ms-flex-order: 4;
             order: 4;
   }
-}
-
-/*-------------------------------------------------------------- OFERTAS ----------------------------------------------------------*/
-.ofertas {
-  background-color: black;
-  font-family: "Orbitron", sans-serif;
-}
-
-.ofertas div {
-  width: 100%;
-  margin-left: 0px;
-}
-
-.ofertas h2 {
-  background-color: #a0a1a1;
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 0rem;
-}
-
-.ofertas h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  font-size: 4rem;
-  padding-top: 4rem;
-  background-color: red;
-}
-
-.ofertas li {
-  font-size: 2rem;
-  list-style: none;
-}
-
-.ofertas--org {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: purple;
 }
 /*# sourceMappingURL=estilo.css.map */
