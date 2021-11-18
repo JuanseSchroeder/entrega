@@ -8,8 +8,6 @@ $blanco:white;
 
 $texto:'Orbitron', sans-serif;
 
-$grid-breakpoint:(xs:360px,xl:1200,md:576px,);
-
 *{
     padding: 0px;
     margin: 0px;
@@ -19,6 +17,9 @@ body{
     background-color:$medio;
     
 }
+$cel:0;
+$tab:576px;
+$lap:768px;
 
 @import "menu";
 @import "principal";
