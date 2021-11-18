@@ -948,7 +948,7 @@ legend {
   padding: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* --------------------------------------------------------------------FOOTER---------------------------------------------------- */
   .footer__barra {
     display: -webkit-box;

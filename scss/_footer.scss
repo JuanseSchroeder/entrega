@@ -1,4 +1,4 @@
-@media (max-width:$tab){
+@media (max-width:$lap){
 /* --------------------------------------------------------------------FOOTER---------------------------------------------------- */
     .footer__barra{
         display: flex;
@@ -44,7 +44,7 @@
     }
 }
 
-@media(min-width:768px){
+@media(min-width:$lap){
     .footer__barra{
         display: flex;
         background-color: $negro;
