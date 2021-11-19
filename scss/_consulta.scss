@@ -1,92 +1,37 @@
 /*----------------------------------------------------------------- CONSULTA------------------------------------------------- */
-form{
-    position: relative;
-    top: 50px;
-    text-align: center;
-    font-family: $texto;
-    color: $blanco;
-}
-legend{
-    margin-top: 30px;
-}
-.fieldset{
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    flex-direction: column;
-    align-content: center;
-    &--box{
-        display: flex;
-        flex-direction: column;
-        background-color: red;
-        margin-top: 0rem;
-        border-radius: 3rem;
-        font-size: 1.2rem;
-        min-width: 1280px;
-        width: 1280px;
-        margin-bottom: 5rem;
-    }
-    &--consulta{
-        color: $blanco;
-        background-color: $medio;
-    }
-    &--info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    &--info label{
-        padding-left: 5rem;
-        position: relative;
-    }
-    &--info input{
-        margin-left: 1rem;
-    }
-    &--producto{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 5rem;
-        font-size: 1.2rem;
-    }
-    &--motivo{
-        display: grid;
-        padding: 2rem;
-        justify-content: center;
-        justify-items: center;
-    }
-    &--motivo section{
-        display: flex;
-        flex-direction: row;
-        margin: 1rem;
-        align-items: center;
-    }
-    &--texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &--redes{
-        display: flex;
-        flex-direction: row;
-        margin: 1rem;
-        justify-content: center;
-        align-items: center;
-    }
-    &--boton{ 
-        display: flex;
-        flex-direction: row;
-        input{
-            margin: 1rem;
+@media(max-width:$tab){
+        .consulta{
+        
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            font-size: 2rem;
+            width: 100%;
+            background-color: $blanco;
+            font-family: $texto;
+            padding: 20px 0.5rem 20px;
+        }
+
+        .consulta__form{
+            background-color: $oscuro;
+            width: 100%;
+            padding: 20px 0.5rem 20px;
+
+            &--nombre{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                background-color: $negro;
+                border-radius: 1rem;
+                div{
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    input{
+                        margin: 1rem;
+                    }
+                }
             }
-    }
-    input{
-        width: 200px;
-        height: 50px;
-    }
-    input:focus{
-        border: red;
-    }
+        }
 }

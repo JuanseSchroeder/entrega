@@ -1,11 +1,69 @@
+
 /* -----------------------------------------------------------------TIENDA ----------------------------------------------------*/
+@media(max-width:$tab){
+    .tienda{
+        padding-top: 3rem;
+        font-family:$texto; 
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: $medio;
+        min-width: 320px;
+        a{
+            text-decoration: none;
+            color: $blanco;
+        }
+        div{
+            background-image: linear-gradient($medio,red, $medio);
+            color: $blanco;
+            width: 100%;
+        }
+        ul{
+            margin: 1rem;
+            padding: 0;
+            li{
+                list-style: none;
+                color: $blanco;
+                padding: 0.5rem;
+                div{
+                    background-color: white;
+                    background-image: none;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 1rem;
+                    font-size: 1rem;
+                    align-items: center;
+                    height: 33rem;
+                    padding: 1rem;
+                    justify-content: space-between;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $blanco;
+                        li{
+                            color: $negro;
+                            list-style: circle;
+                            font-size: 0.8rem;
+                        }
+                    }
+                    img{
+                        padding: 0.5rem;
+                    }
+                    button{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$tab){
 .tienda{
     padding-top: 3rem;
     font-family:$texto; 
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     background-color: $medio;
-    min-width: 1280px;
     a{
         text-decoration: none;
         color: $blanco;
@@ -14,31 +72,41 @@
         background-image: linear-gradient($medio,red, $medio);
         height: 20rem;
         display: flex;
-        min-width: 697px;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         margin-bottom: 1rem;
         color: $blanco;
+        min-width: 500px;
     }
     ul{
-        margin-right: 1.5rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
         li{ 
             background-color: $medio ;
             color: $blanco;
             font-size: 2rem;
             text-align: center;
             list-style: none;
+            padding: 0;
             div{
                 background-color: $blanco;
                 background-image: none;
                 border-radius: 1rem;
+                margin-left: 1rem;
                 img{
-                    margin:20px;
+                    margin:0.3rem;
                 }
+            button{
+                margin-right: 1rem;
+            }
             }
             ul{
                 display: flex;
                 flex-direction: column;
+                margin: 0;
+                padding-left: 1rem;
+                padding-right: 1rem;
                 li{
                     font-size: 1rem;
                     color: $negro;
@@ -50,4 +118,5 @@
             }
         }
     }
+}
 }

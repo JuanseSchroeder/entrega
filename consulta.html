@@ -31,65 +31,22 @@
         </nav>
     </header>
     <!-- -------------------------------------FORMULARIO------------------------------------ -->
-    <form action="#">
-        <fieldset class="fieldset">
-            <legend>CONSULTA</legend>
-            <div class="fieldset fieldset--box">
-                <!-- ------------------------------INFO PERSONAL------------------------------------- -->
-                <div class="fieldset fieldset--info">
-                <label for="nombre" >Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ej. Pedro" required>
-                <label for="apellido" >Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Ej. Rodriguez" required>
-                <label for="documento" >Documento</label>
-                <input type="text" name="documento" id="documento" placeholder="XX-XXX-XXX">
-                </div>
-                <!-- ----------------------------------MODELO ------------------------------------------->
-                <div class="fieldset fieldset--producto">
-                    <div><img src="./img/Hextech2.png" alt="Logo"></div>
-                    <select  name="producto"> 
-                        
-                        <option value="">Selecciona el Producto</option>
-                        <option value="A">SMARTPHONE
-                        </option>
-                        <option value="B">LAPTOP
-                        </option>
-                        <option value="C">RELOJ</option>
-                        <option value="D">TV</option>
-                    </select>
-                </div >
-                <!--------------------------------------- MOTIVO -------------------------------------------->
-                <div class="fieldset fieldset--motivo">
-                    <label for="motivo">Motivo de Consulta</label>
-                    <section>
-                        <div id="m1">Disponibilidad</div>
-                        
-                        <input  type="radio" name="motivo" value="D">
-                        
-                        <div id="m2">Envios</div>
-                        
-                        <input  type="radio" name="motivo" value="E">
-                    </section>
-                </div>   
-                <div class="fieldset fieldset--texto">
-                    <label for="consulta" class="titulo">Dejanos tu consulta</label>
-                    <textarea name="consulta" cols="50" rows="10"></textarea>
-                </div>
-                <!------------------------------------------ INFO A LAS REDES ---------------------------------->
-                <div class="fieldset fieldset--redes">
-                    <div>Recibe informacion nuestra en</div>
-                    <input type="checkbox" name="cbox1" >Facebook
-                    <input type="checkbox" name="cbox2" >Instagram
-                    <input type="checkbox" name="cbox3" >E-Mail
-                </div>
-                <!------------------------------------------ TEXTO DE CONSULTA ------------------------------------->
-                <div class="fieldset fieldset--boton">
-                <input type="submit" value="Enviar Consulta" >
-                <input type="reset" value="Limpiar Formulario" >
+    <main >
+    <div class="consulta">CONSULTA</div>
+    <div class="consulta__form">
+        <form>
+            <!-- NOMBRE -->
+            <div class="consulta__form consulta__form--nombre">
+                <div>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
                 </div>
             </div>
-        </fieldset>
-    </form>
+
+        </form>
+    </div>
+    </main>  
     <!-- -------------------------------------FOOTER------------------------------------------------------ -->
     <footer>
         <ul class="footer__barra">

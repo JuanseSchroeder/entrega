@@ -4,13 +4,17 @@
         font-family: $texto;
         background-color: $blanco;
         height: 425px;
+        min-width: 320px;
         div{
             display: flex;
             flex-direction: column;
             align-items: center;
+
             div{
                 display: flex;
                 flex-direction: row;
+                
+                }
                 p{
                     color: $negro;
                     font-size: 2rem;
@@ -36,7 +40,7 @@
             }
             
         }
-    }
+    
     .productos{
         color: white;
         font-family: $texto;
@@ -50,6 +54,7 @@
         border-color: white;
         padding-bottom: 15rem;
         width: 100%;
+        min-width: 320px;
         h2{
             padding: 3rem;
             font-size: 2rem;
@@ -116,10 +121,81 @@
             }
     }
     .nosotros{
-        background-color: $claro;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
         font-family: $texto;
+        text-align: end;
+        h2{
+            margin: 1rem;
+        }
+
+        button{
+            background-color: $negro;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 1rem;
+            div{
+                
+                font-size: 0.8rem;
+                margin-left: 4rem;
+                iframe{
+                    $escala:1;
+                    height: $escala*9rem;
+                    width: $escala*16rem;
+                }
+            }
+        }
     }
-    
+}
+@media(min-width:$tab){
+    .main__novedad{
+        div{
+            p{
+                color: $negro;
+                font-size: 2rem;
+                padding-top: 3rem;
+                padding-right: 1rem;
+            }
+            div{
+                p{
+                color: $negro;
+                font-size: 2rem;
+                padding-top: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-align: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            div{
+                display: flex;
+                iframe{
+                    $escala:1.5;
+                    height: $escala*9rem;
+                    width: $escala*16rem;
+                }
+            }
+        }
+    }
 }
 //LAPTOP-----------------------------------------------------------------------------------------------------------------------
 @media(min-width:$lap){
@@ -239,6 +315,28 @@
             &--reloj:hover{
             transform: scale(1.2,1.2);
             }
+    }
+    
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-align: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            div{
+                display: flex;
+                iframe{
+                    $escala:2.5;
+                    height: $escala*9rem;
+                    width: $escala*16rem;
+                }
+            }
+        }
     }
 }
 

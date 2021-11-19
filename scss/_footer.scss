@@ -1,6 +1,7 @@
 @media (max-width:$lap){
 /* --------------------------------------------------------------------FOOTER---------------------------------------------------- */
     .footer__barra{
+        margin-bottom: 0;
         display: flex;
         background-color: $negro;
         color: $blanco;
@@ -9,6 +10,8 @@
         font-family:$texto; 
         padding: 0.5rem;
         line-height: 1.5rem;
+        font-size: 0.8rem;
+        min-width: 320px;
         li{
             list-style: none;
             margin: 1rem;
