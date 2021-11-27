@@ -71,7 +71,7 @@ header {
   }
   .nav__barra div h1 {
     font-size: 0;
-    margin-top: 1rem;
+    margin: 0;
   }
   .nav__barra div h1 img {
     -webkit-transform: scale(0.5);
@@ -399,6 +399,8 @@ header {
     color: white;
     font-family: "Orbitron", sans-serif;
     text-align: end;
+    min-width: 320px;
+    background-color: #a0a1a1;
   }
   .nosotros h2 {
     margin: 1rem;
@@ -424,12 +426,32 @@ header {
     margin: 1rem;
   }
   .nosotros div div {
-    font-size: 0.8rem;
-    margin-left: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nosotros div div img {
+    border-radius: 0.5rem;
+    border-width: 10px;
+    border: solid;
+  }
+  .nosotros div div div {
+    width: 15rem;
+    padding: 0;
   }
   .nosotros div div iframe {
     height: 9rem;
     width: 16rem;
+    border-radius: 0.3rem;
   }
 }
 
@@ -477,10 +499,29 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nosotros div div img {
+    border-radius: 0.5rem;
+    border-width: 10px;
+    border: solid;
+  }
+  .nosotros div div div {
+    width: 25rem;
+    padding: 0;
   }
   .nosotros div div iframe {
     height: 13.5rem;
     width: 24rem;
+    border-radius: 0.3rem;
   }
 }
 
@@ -637,6 +678,7 @@ header {
             align-items: center;
     color: white;
     text-align: center;
+    background-color: #a0a1a1;
   }
   .nosotros div {
     display: -webkit-box;
@@ -655,15 +697,90 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nosotros div div img {
+    border-radius: 0.5rem;
+    border-width: 10px;
+    border: solid;
+  }
+  .nosotros div div div {
+    width: 35rem;
+    padding: 0;
   }
   .nosotros div div iframe {
-    height: 22.5rem;
-    width: 40rem;
+    height: 19.8rem;
+    width: 35.2rem;
+    border-radius: 0.3rem;
   }
 }
 
 /*----------------------------------------------------------------- CONSULTA------------------------------------------------- */
 @media (max-width: 576px) {
+  .pregunta__titulo {
+    background-color: white;
+    font-family: "Orbitron", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+    text-align: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    min-width: 320px;
+    padding-top: 1rem;
+    padding-left: 2.2rem;
+  }
+  .pregunta__frecuentes {
+    background-color: black;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    min-width: 320px;
+  }
+  .pregunta__frecuentes ul {
+    list-style: none;
+    background-color: #202124;
+  }
+  .pregunta__frecuentes ul button {
+    background-color: #171717;
+    color: white;
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .pregunta__frecuentes ul button:not(.collapsed) {
+    background-color: #171717;
+    color: red;
+  }
+  .pregunta__frecuentes ul button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f4f4f'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+  }
+  .pregunta__frecuentes ul button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .pregunta__frecuentes ul div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #a0a1a1;
+    font-size: 1rem;
+    text-align: end;
+    padding-left: 2rem;
+  }
   .consulta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,13 +797,176 @@ header {
     background-color: white;
     font-family: "Orbitron", sans-serif;
     padding: 20px 0.5rem 20px;
+    min-width: 320px;
+  }
+  .form-check-input:checked {
+    background-color: red;
+    border-color: red;
   }
   .consulta__form {
-    background-color: #171717;
+    background-color: #a0a1a1;
     width: 100%;
-    padding: 20px 0.5rem 20px;
+    min-width: 320px;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
   }
   .consulta__form--nombre {
+    background-color: black;
+    padding-right: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .consulta__form--nombre div {
+    margin-left: 3rem;
+    margin-right: 0.5rem;
+  }
+  .consulta__form--nombre div input {
+    margin-top: 1rem;
+  }
+  .consulta__form--consulta {
+    background-color: black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    margin-top: 1rem;
+  }
+  .consulta__form--consulta div {
+    margin-left: 3rem;
+    margin-right: 0.5rem;
+  }
+  .consulta__form--consulta div input {
+    margin-top: 1rem;
+  }
+  .consulta__form--boton {
+    background-color: black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .consulta__form--boton div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .consulta__form--boton div input {
+    margin: 0.2rem;
+  }
+  .consulta__form--boton div button {
+    margin: 0.2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .consulta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+    width: 100%;
+    background-color: white;
+    font-family: "Orbitron", sans-serif;
+    padding: 20px 0.5rem 20px;
+    min-width: 576px;
+  }
+  .form-check-input:checked {
+    background-color: red;
+    border-color: red;
+  }
+  .consulta__form {
+    background-color: #202124;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .consulta__form--nombre {
+    background-color: black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+  .consulta__form--nombre div {
+    padding: 1px 0 1rem 1rem;
+  }
+  .consulta__form--nombre div input {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .consulta__form--consulta {
+    background-color: black;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-right: 1rem;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+  }
+  .consulta__form--consulta div {
+    padding: 1px 0 1rem 1rem;
+  }
+  .consulta__form--consulta div input {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .consulta__form--boton {
+    background-color: black;
+    border-radius: 0.5rem;
+    padding-right: 1rem;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .consulta__form--boton div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .consulta__form--boton div input {
+    margin: 0.2rem 0.2rem 0.2rem 1rem;
+  }
+  .consulta__form--boton div button {
+    margin: 0.2rem 0.2rem 0.2rem 1rem;
+  }
+  .pregunta__titulo {
+    background-color: white;
+    font-family: "Orbitron", sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -694,29 +974,50 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    background-color: black;
-    border-radius: 1rem;
+    font-size: 2rem;
+    text-align: end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-width: 320px;
+    padding-top: 4rem;
   }
-  .consulta__form--nombre div {
+  .pregunta__frecuentes {
+    background-color: #171717;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    min-width: 320px;
+  }
+  .pregunta__frecuentes ul {
+    padding: 5rem;
+    list-style: none;
+    background-color: #202124;
+  }
+  .pregunta__frecuentes ul button {
+    background-color: #171717;
+    color: white;
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .pregunta__frecuentes ul button:not(.collapsed) {
+    background-color: #171717;
+    color: red;
+  }
+  .pregunta__frecuentes ul button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f4f4f'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+  }
+  .pregunta__frecuentes ul button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .pregunta__frecuentes ul div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .consulta__form--nombre div input {
-    margin: 1rem;
+    background-color: #a0a1a1;
+    font-size: 1rem;
+    text-align: end;
+    padding-left: 2rem;
   }
 }
 

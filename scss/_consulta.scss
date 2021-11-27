@@ -1,7 +1,55 @@
 /*----------------------------------------------------------------- CONSULTA------------------------------------------------- */
 @media(max-width:$tab){
+        .pregunta__titulo{
+            background-color: $blanco;
+            font-family: $texto;
+            display: flex;
+            flex-direction: column;
+            font-size: 2rem;
+            text-align: end;
+            justify-content: flex-end;
+            min-width: 320px;
+            padding-top: 1rem;
+            padding-left: 2.2rem;
+        }
+        .pregunta__frecuentes{
+            background-color: $negro;
+            color: $blanco;
+            font-family: $texto;
+            min-width: 320px;
+            ul{
+                list-style: none;
+                background-color: $medio;
+                button{
+                    background-color: $oscuro;
+                    color: $blanco;
+                    border-radius: none;
+                    box-shadow: none;
+                    
+                    }
+                button:not(.collapsed){
+                    background-color: $oscuro;
+                    color: red;
+                    
+                    }
+                button:not(.collapsed):after{
+                    background-image: (url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f4f4f'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E"));
+                    }
+                button:focus{
+                    
+                    box-shadow:none;
+                    }
+                div{
+                    display: flex;
+                    background-color: $claro;
+                    font-size: 1rem;
+                    text-align: end;
+                    padding-left: 2rem;
+                    }
+                }
+            }
         .consulta{
-        
+            
             display: flex;
             align-items: flex-end;
             flex-direction: column;
@@ -10,28 +58,205 @@
             background-color: $blanco;
             font-family: $texto;
             padding: 20px 0.5rem 20px;
+            min-width: 320px;
         }
-
+        .form-check-input:checked {
+            background-color: red;
+            border-color: red;
+        }
         .consulta__form{
-            background-color: $oscuro;
+            background-color: $claro;
             width: 100%;
-            padding: 20px 0.5rem 20px;
-
+            min-width: 320px;
+            padding-top: 0.8rem;
+            padding-bottom: 1rem;
+            
             &--nombre{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-end;
                 background-color: $negro;
-                border-radius: 1rem;
+                padding-right: 1rem;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                div{
+                    margin-left: 3rem;
+                    margin-right: 0.5rem;
+                    input{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            &--consulta{
+                background-color: $negro;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                padding-right: 1rem;
+                color: $blanco;
+                font-family: $texto;
+                margin-top: 1rem;
+                div{
+                    margin-left: 3rem;
+                    margin-right: 0.5rem;
+                    input{
+                        margin-top: 1rem;
+                    }
+                }
+                }
+            &--boton{
+                
+                background-color: $negro;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                padding-right: 1rem;
+                color: $blanco;
+                font-family: $texto;
+                font-size: 0.8rem;
+                margin-top: 1rem;
                 div{
                     display: flex;
-                    align-items: flex-end;
-                    flex-direction: column;
+                    margin-left: 3rem;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-evenly;
+                    
                     input{
-                        margin: 1rem;
+                        margin: 0.2rem;
+                    }
+                    button{
+                        margin: 0.2rem;
+                    }
+                }
+            }
+            }
+        
+}
+@media(min-width:$tab){
+    .consulta{
+            
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+        width: 100%;
+        background-color: $blanco;
+        font-family: $texto;
+        padding: 20px 0.5rem 20px;
+        min-width: $tab;
+    }
+    .form-check-input:checked {
+        background-color: red;
+        border-color: red;
+    }
+    .consulta__form{
+        background-color: $medio;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--nombre{
+            background-color: $negro;
+            border-top-left-radius:0.5rem ;
+            border-top-right-radius:0.5rem ;
+            padding-right: 1rem;
+            margin-top: 1rem;
+            div{
+                padding: 1px 0 1rem 1rem;
+                
+                
+                input{
+                    margin-top: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+        &--consulta{
+            background-color: $negro;
+            border-bottom-left-radius:0.5rem ;
+            border-bottom-right-radius:0.5rem ;
+            padding-right: 1rem;
+            
+            color: $blanco;
+            font-family: $texto;
+            div{
+                padding: 1px 0 1rem 1rem;
+                
+                
+                input{
+                    margin-top: 1rem;
+                    width: 100%;
+                }
+            }
+            }
+        &--boton{
+            
+            background-color: $negro;
+            border-radius: 0.5rem;
+            padding-right: 1rem;
+            color: $blanco;
+            font-family: $texto;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            div{
+                display: flex;
+                margin-left: 3rem;
+                align-items: center;
+                text-align: center;
+                justify-content: space-evenly;
+
+                
+                input{
+                    margin: 0.2rem 0.2rem 0.2rem 1rem;
+                }
+                button{
+                    margin: 0.2rem 0.2rem 0.2rem 1rem;
                     }
                 }
             }
         }
-}
+    .pregunta__titulo{
+        background-color: $blanco;
+        font-family: $texto;
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        text-align: end;
+        justify-content: space-around;
+        min-width: 320px;
+        padding-top: 4rem;
+    }
+    .pregunta__frecuentes{
+        background-color: $oscuro;
+        color: $blanco;
+        font-family: $texto;
+        min-width: 320px;
+        ul{
+            padding: 5rem;
+            list-style: none;
+            background-color: $medio;
+            
+            button{
+                background-color: $oscuro;
+                color: $blanco;
+                border-radius: none;
+                box-shadow: none;
+                
+                }
+            button:not(.collapsed){
+                background-color: $oscuro;
+                color: red;
+                
+                }
+            button:not(.collapsed):after{
+                background-image: (url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234f4f4f'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E"));
+                }
+            button:focus{
+                box-shadow:none;
+                }
+            div{
+                display: flex;
+                background-color: $claro;
+                font-size: 1rem;
+                text-align: end;
+                padding-left: 2rem;
+                }
+            }
+        }
+    }

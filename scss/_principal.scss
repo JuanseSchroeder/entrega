@@ -127,6 +127,8 @@
         color: white;
         font-family: $texto;
         text-align: end;
+        min-width: 320px;
+        background-color: $claro;
         h2{
             margin: 1rem;
         }
@@ -138,19 +140,31 @@
                 color: white;
             }
         }
+        
         div{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             margin: 1rem;
             div{
-                
-                font-size: 0.8rem;
-                margin-left: 4rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                img{
+                    border-radius: 0.5rem;
+                    border-width: 10px;
+                    border: solid;
+                }
+                div{
+                width: 15rem;
+                padding: 0;
+                }
                 iframe{
                     $escala:1;
                     height: $escala*9rem;
                     width: $escala*16rem;
+                    border-radius: 0.3rem;
                 }
             }
         }
@@ -188,10 +202,23 @@
             margin: 1rem;
             div{
                 display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                img{
+                    border-radius: 0.5rem;
+                    border-width: 10px;
+                    border: solid;
+                }
+                div{
+                width: 25rem;
+                padding: 0;
+                }
                 iframe{
                     $escala:1.5;
                     height: $escala*9rem;
                     width: $escala*16rem;
+                    border-radius: 0.3rem;
                 }
             }
         }
@@ -323,6 +350,7 @@
         align-items: center;
         color: white;
         text-align: center;
+        background-color: $claro;
         div{
             display: flex;
             flex-direction: column;
@@ -330,10 +358,23 @@
             margin: 1rem;
             div{
                 display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                img{
+                    border-radius: 0.5rem;
+                    border-width: 10px;
+                    border: solid;
+                }
+                div{
+                width: 35rem;
+                padding: 0;
+                }
                 iframe{
-                    $escala:2.5;
+                    $escala:2.2;
                     height: $escala*9rem;
                     width: $escala*16rem;
+                    border-radius: 0.3rem;
                 }
             }
         }
