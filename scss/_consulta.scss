@@ -72,10 +72,13 @@
             padding-bottom: 1rem;
             
             &--nombre{
-                background-color: $negro;
+                background-color: $oscuro;
                 padding-right: 1rem;
                 border-top-right-radius: 1rem;
                 border-bottom-right-radius: 1rem;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                border-right: 1px solid white;
                 div{
                     margin-left: 3rem;
                     margin-right: 0.5rem;
@@ -85,13 +88,16 @@
                 }
             }
             &--consulta{
-                background-color: $negro;
+                background-color: $oscuro;
                 border-top-right-radius: 1rem;
                 border-bottom-right-radius: 1rem;
                 padding-right: 1rem;
                 color: $blanco;
                 font-family: $texto;
                 margin-top: 1rem;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                border-right: 1px solid white;
                 div{
                     margin-left: 3rem;
                     margin-right: 0.5rem;
@@ -102,7 +108,7 @@
                 }
             &--boton{
                 
-                background-color: $negro;
+                background-color: $oscuro;
                 border-top-right-radius: 1rem;
                 border-bottom-right-radius: 1rem;
                 padding-right: 1rem;
@@ -110,6 +116,9 @@
                 font-family: $texto;
                 font-size: 0.8rem;
                 margin-top: 1rem;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                border-right: 1px solid white;
                 div{
                     display: flex;
                     margin-left: 3rem;
@@ -151,11 +160,14 @@
         flex-direction: column;
         align-items: center;
         &--nombre{
-            background-color: $negro;
+            background-color: $oscuro;
             border-top-left-radius:0.5rem ;
             border-top-right-radius:0.5rem ;
             padding-right: 1rem;
             margin-top: 1rem;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
             div{
                 padding: 1px 0 1rem 1rem;
                 
@@ -167,11 +179,13 @@
             }
         }
         &--consulta{
-            background-color: $negro;
+            background-color: $oscuro;
             border-bottom-left-radius:0.5rem ;
             border-bottom-right-radius:0.5rem ;
             padding-right: 1rem;
-            
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
             color: $blanco;
             font-family: $texto;
             div{
@@ -186,7 +200,8 @@
             }
         &--boton{
             
-            background-color: $negro;
+            background-color: $oscuro;
+            border: 1px solid white;
             border-radius: 0.5rem;
             padding-right: 1rem;
             color: $blanco;
@@ -200,10 +215,12 @@
                 align-items: center;
                 text-align: center;
                 justify-content: space-evenly;
-                
-                
+                margin: 1rem;
+                button{
+                    margin-left: 1rem;
+                }
                 input{
-                    margin: 0.2rem 0.2rem 0.2rem 1rem;
+                    margin: 0.2rem 1rem 0.2rem 1rem;
                     }
                 }
             }

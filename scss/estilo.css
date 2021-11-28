@@ -811,10 +811,13 @@ header {
     padding-bottom: 1rem;
   }
   .consulta__form--nombre {
-    background-color: black;
+    background-color: #171717;
     padding-right: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
   }
   .consulta__form--nombre div {
     margin-left: 3rem;
@@ -824,13 +827,16 @@ header {
     margin-top: 1rem;
   }
   .consulta__form--consulta {
-    background-color: black;
+    background-color: #171717;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding-right: 1rem;
     color: white;
     font-family: "Orbitron", sans-serif;
     margin-top: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
   }
   .consulta__form--consulta div {
     margin-left: 3rem;
@@ -840,7 +846,7 @@ header {
     margin-top: 1rem;
   }
   .consulta__form--boton {
-    background-color: black;
+    background-color: #171717;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding-right: 1rem;
@@ -848,6 +854,9 @@ header {
     font-family: "Orbitron", sans-serif;
     font-size: 0.8rem;
     margin-top: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
   }
   .consulta__form--boton div {
     display: -webkit-box;
@@ -907,11 +916,14 @@ header {
             align-items: center;
   }
   .consulta__form--nombre {
-    background-color: black;
+    background-color: #171717;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     padding-right: 1rem;
     margin-top: 1rem;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
   }
   .consulta__form--nombre div {
     padding: 1px 0 1rem 1rem;
@@ -921,10 +933,13 @@ header {
     width: 100%;
   }
   .consulta__form--consulta {
-    background-color: black;
+    background-color: #171717;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     padding-right: 1rem;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
     color: white;
     font-family: "Orbitron", sans-serif;
   }
@@ -936,7 +951,8 @@ header {
     width: 100%;
   }
   .consulta__form--boton {
-    background-color: black;
+    background-color: #171717;
+    border: 1px solid white;
     border-radius: 0.5rem;
     padding-right: 1rem;
     color: white;
@@ -957,9 +973,13 @@ header {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 1rem;
+  }
+  .consulta__form--boton div button {
+    margin-left: 1rem;
   }
   .consulta__form--boton div input {
-    margin: 0.2rem 0.2rem 0.2rem 1rem;
+    margin: 0.2rem 1rem 0.2rem 1rem;
   }
   .pregunta__titulo {
     background-color: white;
