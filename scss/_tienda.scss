@@ -8,6 +8,13 @@
         font-size: 1.2rem;
         background-color: $medio;
         min-width: 320px;
+        &--boton{
+            background-color: $oscuro;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
+            margin: 10px;
+        }
         a{
             text-decoration: none;
             color: $blanco;
@@ -18,7 +25,7 @@
             width: 100%;
         }
         ul{
-            margin: 1rem;
+            margin: 0.5rem;
             padding: 0;
             li{
                 list-style: none;
@@ -68,6 +75,13 @@
         text-decoration: none;
         color: $blanco;
     }
+    &--boton{
+        background-color: $negro;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+        margin: 10px;
+    }
     div{
         background-image: linear-gradient($medio,red, $medio);
         height: 20rem;
@@ -97,9 +111,6 @@
                 img{
                     margin:0.3rem;
                 }
-            button{
-                margin-right: 1rem;
-            }
             }
             ul{
                 display: flex;

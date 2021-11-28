@@ -1061,6 +1061,13 @@ header {
     background-color: #202124;
     min-width: 320px;
   }
+  .tienda--boton {
+    background-color: #171717;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    margin: 10px;
+  }
   .tienda a {
     text-decoration: none;
     color: white;
@@ -1072,7 +1079,7 @@ header {
     width: 100%;
   }
   .tienda ul {
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0;
   }
   .tienda ul li {
@@ -1133,6 +1140,13 @@ header {
     text-decoration: none;
     color: white;
   }
+  .tienda--boton {
+    background-color: black;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    margin: 10px;
+  }
   .tienda div {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#202124), color-stop(red), to(#202124));
     background-image: linear-gradient(#202124, red, #202124);
@@ -1172,9 +1186,6 @@ header {
   }
   .tienda ul li div img {
     margin: 0.3rem;
-  }
-  .tienda ul li div button {
-    margin-right: 1rem;
   }
   .tienda ul li ul {
     display: -webkit-box;
