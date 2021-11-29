@@ -34,23 +34,33 @@
     <!-- ----------------------------CARRITO---------------------------------------------- -->
     <main>
         <fieldset class="carrito">
-            <div>
+            <div class="carrito--titulo">
                 TUS PRODUCTOS:
             </div>
             <!-- -------------------------------PRODUCTOS---------------------------- -->
-            
+            <div class="carrito__productos">
                 <ul>
-                    <li>Producto 1</li>
-                    <li>Producto 2</li>
-                    <li> . </li>
-                    <li> .</li>
-                    <li> .</li>
-                    <li>Producto N</li>
+                    <div class="carrito__productos--nombre">
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li> . </li>
+                        <li> .</li>
+                        <li> .</li>
+                        <li>Producto N</li>
+                    </div>
+                    <div class="carrito__productos--precio">
+                        <li>$ xx1 </li>
+                        <li>$ xx2</li>
+                        <li>.</li>
+                        <li>.</li>
+                        <li>.</li>
+                        <li>$ xxN</li>
+                    </div>
                 </ul>
-            
+            </div>
                 <!-- -------------------------IMPORTE FINAL----NECESARIO JAVA SCRIP PARA HACERLO FUNCIONAR--------- -->
-            <div>Total: $ xxx</div>
-            <div>
+            <div class="carrito--precio">Total: $ xxx</div>
+            <div class="carrito--botones">
                 <input type="submit" value="Finalizar Compra" >
                 <input type="reset" value="Vaciar el Carrito" >
             </div>
