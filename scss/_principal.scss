@@ -1,5 +1,6 @@
 
 @media (min-width:$cel){
+    //-----------------------------NOVEDADES------------------------------------------------------------------------------
     .main__novedad{
         font-family: $texto;
         background-color: $blanco;
@@ -26,12 +27,7 @@
                 transform: scale(0.4);
                 padding: 0px;
             } 
-            button{
-                a{
-                    text-decoration: none;
-                    color: $blanco;
-                }
-            }  
+            
             p{
                 padding-top: 3rem;
                 font-size: 2rem;
@@ -40,7 +36,7 @@
             }
             
         }
-    
+    //-----------------------------PRODUCTOS------------------------------------------------------------------------------
     .productos{
         color: white;
         font-family: $texto;
@@ -120,6 +116,7 @@
             transform: scale(1.2,1.2);
             }
     }
+    //-----------------------------NOSOTROS------------------------------------------------------------------------------
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -133,13 +130,7 @@
             margin: 1rem;
         }
 
-        button{
-            background-color: $negro;
-            a{
-                text-decoration: none;
-                color: white;
-            }
-        }
+
         
         div{
             display: flex;
@@ -170,7 +161,9 @@
         }
     }
 }
+//TABLET-------------------------------------------------------------------------------------------------------------------------
 @media(min-width:$tab){
+    //-----------------------------NOVEDADES------------------------------------------------------------------------------
     .main__novedad{
         div{
             p{
@@ -185,10 +178,11 @@
                 font-size: 2rem;
                 padding-top: 1rem;
                 padding-right: 1rem;
+                }
             }
         }
     }
-}
+    //-----------------------------NOSOTROS------------------------------------------------------------------------------
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -226,6 +220,7 @@
 }
 //LAPTOP-----------------------------------------------------------------------------------------------------------------------
 @media(min-width:$lap){
+    //-----------------------------NOVEDADES------------------------------------------------------------------------------
     .main__novedad{
         background-color: $blanco;
         width: 100%;
@@ -343,7 +338,7 @@
             transform: scale(1.2,1.2);
             }
     }
-    
+    //-----------------------------NOSOTROS------------------------------------------------------------------------------
     .nosotros{
         display: flex;
         flex-direction: column;

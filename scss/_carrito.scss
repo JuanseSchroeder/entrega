@@ -1,5 +1,6 @@
-/*--------------------------------------------------------- CARRITO --------------------------------------------------------------*/
+/*--------------------------------------------------------TELEFONO------------------------------------------------------------*/
 @media(max-width:$tab){
+    //-----------------------------GENERAL-----------------------------------------------------------------------------
     .carrito{
     background-color: $medio;
     color: $blanco;
@@ -13,7 +14,7 @@
         border-radius: 0.5rem;
         border: 1px solid   $blanco;
         background-color: $oscuro;
-        input{
+        button{
             width: 200px;
             margin: 1rem;
         }
@@ -56,6 +57,7 @@
             min-width: 320px;
         }
     }
+    //-----------------------------PRODUCTOS------------------------------------------------------------------------------
     .carrito__productos{
         margin: 4rem;
         display: flex;
@@ -95,6 +97,7 @@
         }
 }
 }
+//-----------------------------TABLET Y LAPTOP------------------------------------------------------------------------------
 @media(min-width:$tab){
     .carrito{
         background-color: $medio;
@@ -110,7 +113,7 @@
             border: 1px solid   $blanco;
             min-width:320px;
             background-color: $oscuro;
-            input{
+            button{
                 width: 200px;
                 margin: 1rem;
             }
@@ -134,6 +137,7 @@
                 font-size: 3rem;
         }
         }
+//----------------------------PRODUCTOS-----------------------------------------------------------------------------
     .carrito__productos{
             margin: 4rem;
             display: flex;

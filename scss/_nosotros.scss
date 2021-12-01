@@ -1,0 +1,240 @@
+/* ------------------------------------------- TELEFONO --------------------------------------------------------------- */
+@media (min-width:$cel){
+    //-----------------------------NOSOTROS------------------------------------------------------------------------------
+    .we{
+        color: $blanco;
+        font-family: $texto;
+        min-width: 320px;
+        padding-top: 2rem;
+        h2{
+            font-size: 1.2rem;
+            text-align: center;
+            
+            margin-left: 5rem;
+            margin-right: 3rem;
+        }
+        div{
+            font-size: 0.8rem;
+            margin: 1rem 3rem 1rem 5rem;
+            text-align: justify;
+        }
+        &--img{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            border: 1px solid $blanco;
+            
+            img{
+                width:100%;
+            }
+        }
+    }
+    //-----------------------------INFO DE NOSOTROS------------------------------------------------------------------------------
+    .we__variedad{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+        margin: 1rem 3rem 1rem 5rem;
+        background-color: $medio;
+        color: $blanco;
+        font-family: $texto;
+        min-width: 192px;
+        div{
+            div{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border:1px solid    $blanco;
+        }}
+        img{
+            width: 40%;
+            max-width: 500px;
+        }
+        &--innovacion{
+            border: none;
+            h3{
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            color: $claro;
+            }
+        }
+        &--empleo{
+            h3{
+                font-size: 1.2rem;
+            padding: 0.5rem;
+            color: $claro;
+        }
+        }
+        &--sostenibilidad{
+            h3{
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            color: $claro;
+        }
+        }
+    }
+    //-----------------------------TRABAJA CON NOSOTROS------------------------------------------------------------------------------
+    .we__trabajo{
+        background-color: $claro;
+        color: $blanco;
+        font-family: $texto;
+        font-size: 1rem;
+        text-align:center;
+        padding-top:2rem; 
+        padding-bottom: 1rem;
+        border-top: 5px solid $blanco;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        h3{
+            color: $oscuro  ;
+        }
+        div{
+            margin: 1rem 3rem 1rem 5rem;
+            background-color: $medio;
+            padding: 0.5rem;
+        }
+        &--consulta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            padding: 0;
+            background-color: $medio;
+            
+            div{
+                margin: 1rem;
+                
+            }
+            a{
+                background-color: $negro;
+            }
+        }
+    }
+}
+/* ------------------------------------------- PC Y LAPTOP --------------------------------------------------------------- */
+@media (min-width:$tab){
+    //-----------------------------NOSOTROS------------------------------------------------------------------------------
+    .we{
+        color: $blanco;
+        font-family: $texto;
+        min-width: 320px;
+        padding-top: 5rem;
+        h2{
+            font-size: 1.2rem;
+            text-align: center;
+            
+            margin-left: 5rem;
+            margin-right: 3rem;
+        }
+        div{
+            font-size: 0.8rem;
+            margin: 1rem 3rem 1rem 5rem;
+            text-align: justify;
+        }
+        &--img{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 0;
+            border: 1px solid $blanco;
+            
+            img{
+                width: 50%;
+            }
+        }
+    }
+    //-----------------------------INFO DE NOSOTROS------------------------------------------------------------------------------
+    .we__variedad{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 1rem 3rem 1rem 5rem;
+        background-color: $medio;
+        color: $blanco;
+        font-family: $texto;
+        min-width: 192px;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border:1px solid    $blanco;
+            height: 20rem;
+            width: 20rem;
+            margin: 1rem;
+        }}
+        img{
+            width: 40%;
+            max-width: 500px;
+        }
+        &--innovacion{
+            border: none;
+            h3{
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            color: $claro;
+            }
+        }
+        &--empleo{
+            h3{
+                font-size: 1.2rem;
+            padding: 0.5rem;
+            color: $claro;
+        }
+        }
+        &--sostenibilidad{
+            h3{
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            color: $claro;
+        }
+        }
+    }
+    //-----------------------------TRABAJA CON NOSOTROS------------------------------------------------------------------------------
+    .we__trabajo{
+        background-color: $claro;
+        color: $blanco;
+        font-family: $texto;
+        font-size: 1rem;
+        text-align:center;
+        padding-top:2rem; 
+        padding-bottom: 1rem;
+        border-top: 5px solid $blanco;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            color: $oscuro  ;
+        }
+        div{
+            width: 30rem;
+            background-color: $medio;
+            padding: 1rem;
+        }
+        &--consulta{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: justify;
+            padding: 0;
+            background-color: $medio;
+            
+            div{
+                margin: 0rem;
+                
+            }
+            a{
+                background-color: $negro;
+            }
+        }
+    }
+}

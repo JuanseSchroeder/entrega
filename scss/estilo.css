@@ -8,6 +8,21 @@
 
 body {
   background-color: #202124;
+  min-width: 320px;
+}
+
+.boton {
+  background-color: #171717;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.boton:hover {
+  color: white;
 }
 
 /* -------------------------------------------BARRA DE NAVEGACION-------------------------------------------------- */
@@ -279,10 +294,6 @@ header {
             transform: scale(0.4);
     padding: 0px;
   }
-  .main__novedad button a {
-    text-decoration: none;
-    color: white;
-  }
   .main__novedad p {
     padding-top: 3rem;
     font-size: 2rem;
@@ -404,13 +415,6 @@ header {
   }
   .nosotros h2 {
     margin: 1rem;
-  }
-  .nosotros button {
-    background-color: black;
-  }
-  .nosotros button a {
-    text-decoration: none;
-    color: white;
   }
   .nosotros div {
     display: -webkit-box;
@@ -723,7 +727,7 @@ header {
   }
 }
 
-/*----------------------------------------------------------------- CONSULTA------------------------------------------------- */
+/*----------------------------------------TELEFONO------------------------------------------------- */
 @media (max-width: 576px) {
   .pregunta__titulo {
     background-color: white;
@@ -845,6 +849,9 @@ header {
   .consulta__form--consulta div input {
     margin-top: 1rem;
   }
+  .consulta__form--consulta textarea {
+    margin-top: 1rem;
+  }
   .consulta__form--boton {
     background-color: #171717;
     border-top-right-radius: 1rem;
@@ -950,6 +957,9 @@ header {
     margin-top: 1rem;
     width: 100%;
   }
+  .consulta__form--consulta div textarea {
+    margin-top: 1rem;
+  }
   .consulta__form--boton {
     background-color: #171717;
     border: 1px solid white;
@@ -1051,7 +1061,6 @@ header {
   }
 }
 
-/* -----------------------------------------------------------------TIENDA ----------------------------------------------------*/
 @media (max-width: 576px) {
   .tienda {
     padding-top: 3rem;
@@ -1208,7 +1217,290 @@ header {
   }
 }
 
-/*--------------------------------------------------------- CARRITO --------------------------------------------------------------*/
+/* ------------------------------------------- TELEFONO --------------------------------------------------------------- */
+@media (min-width: 0) {
+  .we {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    min-width: 320px;
+    padding-top: 2rem;
+  }
+  .we h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 3rem;
+  }
+  .we div {
+    font-size: 0.8rem;
+    margin: 1rem 3rem 1rem 5rem;
+    text-align: justify;
+  }
+  .we--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    border: 1px solid white;
+  }
+  .we--img img {
+    width: 100%;
+  }
+  .we__variedad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: end;
+    margin: 1rem 3rem 1rem 5rem;
+    background-color: #202124;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    min-width: 192px;
+  }
+  .we__variedad div div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+  }
+  .we__variedad img {
+    width: 40%;
+    max-width: 500px;
+  }
+  .we__variedad--innovacion {
+    border: none;
+  }
+  .we__variedad--innovacion h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #a0a1a1;
+  }
+  .we__variedad--empleo h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #a0a1a1;
+  }
+  .we__variedad--sostenibilidad h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #a0a1a1;
+  }
+  .we__trabajo {
+    background-color: #a0a1a1;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: 5px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 320px;
+  }
+  .we__trabajo h3 {
+    color: #171717;
+  }
+  .we__trabajo div {
+    margin: 1rem 3rem 1rem 5rem;
+    background-color: #202124;
+    padding: 0.5rem;
+  }
+  .we__trabajo--consulta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    padding: 0;
+    background-color: #202124;
+  }
+  .we__trabajo--consulta div {
+    margin: 1rem;
+  }
+  .we__trabajo--consulta a {
+    background-color: black;
+  }
+}
+
+/* ------------------------------------------- PC Y LAPTOP --------------------------------------------------------------- */
+@media (min-width: 576px) {
+  .we {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    min-width: 320px;
+    padding-top: 5rem;
+  }
+  .we h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 3rem;
+  }
+  .we div {
+    font-size: 0.8rem;
+    margin: 1rem 3rem 1rem 5rem;
+    text-align: justify;
+  }
+  .we--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    border: 1px solid white;
+  }
+  .we--img img {
+    width: 50%;
+  }
+  .we__variedad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 1rem 3rem 1rem 5rem;
+    background-color: #202124;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    min-width: 192px;
+  }
+  .we__variedad div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .we__variedad div div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+  }
+  .we__variedad img {
+    width: 40%;
+    max-width: 500px;
+  }
+  .we__variedad--innovacion {
+    border: none;
+  }
+  .we__variedad--innovacion h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #a0a1a1;
+  }
+  .we__variedad--empleo h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #a0a1a1;
+  }
+  .we__variedad--sostenibilidad h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #a0a1a1;
+  }
+  .we__trabajo {
+    background-color: #a0a1a1;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: 5px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .we__trabajo h3 {
+    color: #171717;
+  }
+  .we__trabajo div {
+    width: 30rem;
+    background-color: #202124;
+    padding: 1rem;
+  }
+  .we__trabajo--consulta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+    padding: 0;
+    background-color: #202124;
+  }
+  .we__trabajo--consulta div {
+    margin: 0rem;
+  }
+  .we__trabajo--consulta a {
+    background-color: black;
+  }
+}
+
+/*--------------------------------------------------------TELEFONO------------------------------------------------------------*/
 @media (max-width: 576px) {
   .carrito {
     background-color: #202124;
@@ -1232,7 +1524,7 @@ header {
     border: 1px solid white;
     background-color: #171717;
   }
-  .carrito--botones input {
+  .carrito--botones button {
     width: 200px;
     margin: 1rem;
   }
@@ -1378,7 +1670,7 @@ header {
     min-width: 320px;
     background-color: #171717;
   }
-  .carrito--botones input {
+  .carrito--botones button {
     width: 200px;
     margin: 1rem;
   }
@@ -1465,7 +1757,7 @@ header {
 }
 
 @media (max-width: 768px) {
-  /* --------------------------------------------------------------------FOOTER---------------------------------------------------- */
+  /* --------------------------------------------------------------------TELEFONO--------------------------------------------------- */
   .footer__barra {
     margin-bottom: 0;
     display: -webkit-box;
